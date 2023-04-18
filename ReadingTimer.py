@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
+
 # import time module 
 # import playsound module's playsound to play beep sound
 import time
+import sys
 # from pygame import mixer
 from playsound import playsound
 # define the function countdown timer
@@ -23,7 +25,8 @@ def timer(c):
 	beep.play()
 """
 # User input of time
-c=input("Enter time in seconds:")
+#c=input("Enter time in seconds:")
+c=sys.argv[1]
 # Call the function timer
 timer(int(c))
 
